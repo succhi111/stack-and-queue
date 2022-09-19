@@ -5,9 +5,12 @@ public class Stack <T>{
     public void push(T data) {
         linkedList.addAtStart(data);
     }
-
-
-    public void print(){
+    public void pop(T data) {
+        linkedList.deleteAtStart();
+    }
+    public void peek(T data) {
         linkedList.print();
     }
+
+
 }
